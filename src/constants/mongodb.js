@@ -1,0 +1,1 @@
+export const mongo=`mongodb+srv://rihaan369:${process.env.MONGOPASS}@cluster0.o8mun.mongodb.net/notes-app?retryWrites=true&w=majority`;
