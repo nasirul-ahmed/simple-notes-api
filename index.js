@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const addnotes = require('./src/routes/add_notes/router.add_notes');
 const bodyParser = require("body-parser");
 const getNotes = require('./src/routes/get_notes/router.get_notes');
@@ -12,6 +13,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(express.json());
+app.use(cors())
 
 
 
